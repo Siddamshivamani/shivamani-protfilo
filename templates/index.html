@@ -1,0 +1,201 @@
+
+{% extends "base.html" %}
+
+{% block title %}Home | Siddam Shivamani{% endblock %}
+
+{% block content %}
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+        <h1>Hi, I'm <span>Siddam Shivamani</span></h1>
+
+        <h2>Aspiring Python Full Stack Developer</h2>
+
+        <p>
+            BCA graduate passionate about programming, web development
+            and learning new technologies. I am looking for opportunities
+            to improve my technical skills and grow in the IT industry.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="{{ url_for('static', path='image/profile.jpg') }}"
+             alt="Siddam Shivamani Profile Picture">
+    </div>
+
+</section>
+
+<section id="about" class="section">
+
+    <h2>About Me</h2>
+
+    <p>
+        I am a motivated and enthusiastic Bachelor of Computer Applications
+        graduate seeking an opportunity in the IT industry where I can apply
+        my programming knowledge, improve my technical skills and contribute
+        to the growth of the organization.
+    </p>
+
+    <p>
+        I am a quick learner with problem-solving skills, teamwork abilities
+        and good communication skills. I am interested in web development
+        and backend development using Python.
+    </p>
+
+</section>
+
+<section id="skills" class="section">
+
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">C</div>
+        <div class="skill">C++</div>
+        <div class="skill">Python</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">FastAPI</div>
+        <div class="skill">Jinja2</div>
+        <div class="skill">MS Word</div>
+        <div class="skill">Excel</div>
+        <div class="skill">PowerPoint</div>
+
+    </div>
+
+</section>
+
+<section id="projects" class="section">
+
+    <h2>My Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-card">
+
+            <h3>Product Display Application</h3>
+
+            <p>
+                A web application developed to display and manage product
+                information using backend development and database integration.
+            </p>
+
+            <p class="tech">Python | FastAPI | Jinja2 | MySQL</p>
+
+        </div>
+
+        <div class="project-card">
+
+            <h3>Student Portal</h3>
+
+            <p>
+                A student portal project designed to organize and display
+                student-related information through a web application.
+            </p>
+
+            <p class="tech">HTML | CSS | Python | FastAPI</p>
+
+        </div>
+
+        <div class="project-card">
+
+            <h3>Personal Portfolio</h3>
+
+            <p>
+                A personal website showcasing my profile, technical skills,
+                educational background, projects and contact information.
+            </p>
+
+            <p class="tech">HTML | CSS | FastAPI | Jinja2</p>
+
+        </div>
+         <div class="project-card">
+
+            <h3>Autonomous Mobile Mesh Networks</h3>
+
+            <p>
+                this project is a distributed client tracking solution to deal with the dynamic nature of client mobility
+            </p>
+
+            <p class="tech">. Dot net|Cywin|OTCL(object oreinted tool command)</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="education" class="section">
+
+    <h2>Education</h2>
+
+    <div class="education-card">
+
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+
+        <p>Masterji Degree &amp; PG College</p>
+        <p>Kakatiya University</p>
+        <p>2023 - 2026</p>
+        <p>Percentage: 78%</p>
+
+    </div>
+
+    <div class="education-card">
+
+        <h3>Intermediate (12th)</h3>
+
+        <p>Vidwan Junior College</p>
+        <p>2021 - 2023</p>
+        <p>Percentage: 58%</p>
+
+    </div>
+
+    <div class="education-card">
+
+        <h3>SSC (10th)</h3>
+
+        <p>Telangana State Model School</p>
+        <p>2021</p>
+        <p>Percentage: 100%</p>
+
+    </div>
+
+</section>
+
+<section id="contact" class="section contact">
+
+    <h2>Contact Me</h2>
+
+    <p>
+        <strong>Email:</strong>
+        <a href="mailto:siddamshivamani@gmail.com">
+            siddamshivamani@gmail.com
+        </a>
+    </p>
+
+    <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://linkedin.com/in/shivamani-siddam-282b70342/"
+           target="_blank">
+            LinkedIn Profile
+        </a>
+    </p>
+
+    <p>
+        <strong>Location:</strong> Warangal, Telangana
+    </p>
+
+</section>
+
+{% endblock %}
